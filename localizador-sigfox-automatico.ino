@@ -13,6 +13,10 @@ SoftwareSerial myGPS(4, 3);
 String bufer; // Variable para almacenar la carga útil del mensaje a enviar
 const int boton = 6; // Definir el pin del botón de acción (azul)
 const int modem = 7; // Definir el pin del módem Sigfox
+
+//variable de tiempo para lectura de GPS
+// la unidad de tiempo esta en milisegundo. 900,000  milisegundo = 900 segundos = 15 minutos
+// 600,000 milisegundos = 600 segundos = 10 minutos.
 unsigned long limitMs=900000;
 unsigned long startTime=0;
 void setup() {
